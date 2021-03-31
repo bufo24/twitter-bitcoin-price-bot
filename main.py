@@ -14,6 +14,6 @@ twitter = Twython(
     access_token_secret
 )
 
-message = "Bitcoin is currently $" + price
+message = "#Bitcoin is currently $" + price
 twitter.update_status(status=message)
 print("Tweeted: {}".format(message))
